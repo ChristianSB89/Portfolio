@@ -1,75 +1,58 @@
-/* Body */
-
 body {
   font-family: "Ubuntu", sans-serif;
   display: flex;
-  background: #82c0cc;
   margin: 0;
-  color: #16697a;
+  color: #0e4550;
+  height: 100vh;
 }
 
-/* Typography */
-
-#name {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.mail {
-  text-decoration: none;
-  color: #16697a;
-}
-
-.mail:hover {
-  color: #05191d;
-}
-
-/* Sidebar (including navbox, nav-btns, sidebar-image, sidebar-footer) */
+/* -------------------------------------------- */
+/* Sidebar (Navbar, buttons and text */
+/* -------------------------------------------- */
 
 .sidebar {
+  background: #82c0cc;
   display: flex;
   flex-direction: column;
-  height: stretch;
+  /* height: 100%; */
   width: 15%;
-  padding: 3em;
+  padding: 3em 3em 3em 3em;
   border-right: #16697a 0.2em solid;
+  position: sticky;
 }
 
-.navbox {
-  padding: 2em 0 2em 0;
-  display: flex;
-  flex-direction: column;
+.info {
+  text-align: center;
+}
+
+#short-intro {
+  font-size: 12px;
 }
 
 .sidebar-image {
-  width: 300px;
-  height: 300px;
+  width: 100%;
   object-fit: contain;
 }
 
+.navbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .nav-btns {
-  margin: 0.5em 0 0.5em 0;
-  padding: 0.5em;
   text-decoration: none;
-  color: #16697a;
+  color: #0e4550;
 }
 
 .nav-btns:hover {
   color: #82c0cc;
-  background: #16697a;
+  background: #0e4550;
 }
 
 .active-btn {
-  border-bottom: 0.2em #16697a solid;
-}
-
-.links {
-  padding: 2em 1em;
-}
-
-.link-deco {
-  padding: 0 1.5em;
-  text-decoration: none;
+  border-bottom: 0.2em #0e4550 solid;
+  pointer-events: none;
 }
 
 ul {
@@ -78,22 +61,82 @@ ul {
 }
 
 li {
-  margin: 1em 0 1em 0;
-  padding: 0.5em 0 0.5em 0.5em;
+  margin: 0 0 1em 0;
 }
 
-/* Main Body - About */
+/* -------------------------------------------- */
+/* Sidebar - Footer */
+/* -------------------------------------------- */
 
-.pitch {
-  width: 50%;
-  margin-left: 200px;
+.footer-txt {
+  text-align: center;
+  font-size: 7px;
 }
 
-/* Project Showcase */
+.links {
+  display: flex;
+  padding: 2em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------- */
+/* Project Showcase + Other Projects */
+/* -------------------------------------------- */
 
 .main-body {
-  width: 85%;
-  padding: 2em;
+  background: #82c0cc;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.other-body {
+  background: #82c0cc;
+  width: 100%;
+}
+
+.horizontal-align {
+  text-align: center;
+}
+
+.project-images,
+.figma-embedded {
+  margin-top: 3em;
+  margin-left: 3em;
+  border: none;
+  width: 6em;
+  height: 6em;
+}
+
+.side-projects {
+  display: flex;
+  flex-direction: column;
+  width: 6em;
+  height: 6em;
+}
+
+@media (min-width: 750px) {
+  .project-images,
+  .figma-embedded {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-images,
+  .figma-embedded {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+.soundcloud {
+  scroll-behavior: auto;
 }
 
 .projects:hover {
@@ -104,16 +147,21 @@ iframe:hover {
   opacity: 70%;
 }
 
-.project-images,
-.figma-embedded,
-.youtube,
-.soundcloud {
-  padding: 1em;
-  border: none;
-  width: 400px;
-  height: 400px;
+/* -------------------------------------------- */
+/* About */
+/* -------------------------------------------- */
+
+.pitch {
+  padding: 0;
+  margin: 3em 1em 0 1em;
 }
 
-.soundcloud {
-  scroll-behavior: auto;
+/* -------------------------------------------- */
+/* From min-width of (amount of pixels) and bigger */
+/* -------------------------------------------- */
+@media (min-width: 750px) {
+  .pitch {
+    margin: 3em 0 0 3em;
+    width: 30em;
+  }
 }
