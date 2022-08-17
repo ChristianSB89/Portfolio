@@ -33,6 +33,7 @@ body {
   width: 15%;
   padding: 3em;
   border-right: #16697a 0.2em solid;
+  margin: 0;
 }
 
 .navbox {
@@ -42,8 +43,8 @@ body {
 }
 
 .sidebar-image {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 
@@ -96,24 +97,38 @@ li {
   padding: 2em;
 }
 
+.project-images,
+.youtube,
+.soundcloud {
+  margin: 3em 0;
+  padding: 1em;
+  border: none;
+  width: 200px;
+  height: 200px;
+  opacity: 40%;
+}
+
 .projects:hover {
-  opacity: 70%;
+  opacity: 100%;
 }
 
 iframe:hover {
-  opacity: 70%;
-}
-
-.project-images,
-.figma-embedded,
-.youtube,
-.soundcloud {
-  padding: 1em;
-  border: none;
-  width: 400px;
-  height: 400px;
+  opacity: 100%;
 }
 
 .soundcloud {
   scroll-behavior: auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.overlay-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
