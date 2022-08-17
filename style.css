@@ -1,0 +1,119 @@
+/* Body */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  background: #82c0cc;
+  margin: 0;
+  color: #16697a;
+}
+
+/* Typography */
+
+#name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.mail {
+  text-decoration: none;
+  color: #16697a;
+}
+
+.mail:hover {
+  color: #05191d;
+}
+
+/* Sidebar (including navbox, nav-btns, sidebar-image, sidebar-footer) */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: stretch;
+  width: 15%;
+  padding: 3em;
+  border-right: #16697a 0.2em solid;
+}
+
+.navbox {
+  padding: 2em 0 2em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.nav-btns {
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #16697a;
+}
+
+.nav-btns:hover {
+  color: #82c0cc;
+  background: #16697a;
+}
+
+.active-btn {
+  border-bottom: 0.2em #16697a solid;
+}
+
+.links {
+  padding: 2em 1em;
+}
+
+.link-deco {
+  padding: 0 1.5em;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0.5em 0 0.5em 0;
+}
+
+li {
+  margin: 1em 0 1em 0;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+/* Main Body - About */
+
+.pitch {
+  width: 50%;
+  margin-left: 200px;
+}
+
+/* Project Showcase */
+
+.main-body {
+  width: 85%;
+  padding: 2em;
+}
+
+.projects:hover {
+  opacity: 70%;
+}
+
+iframe:hover {
+  opacity: 70%;
+}
+
+.project-images,
+.figma-embedded,
+.youtube,
+.soundcloud {
+  padding: 1em;
+  border: none;
+  width: 400px;
+  height: 400px;
+}
+
+.soundcloud {
+  scroll-behavior: auto;
+}
